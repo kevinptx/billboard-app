@@ -12,10 +12,10 @@
   <div class=extra content>
   <div class="ui two buttons">
   <div class="ui green button">
-   <%= link_to "Edit", edit_board_path(board), class: "card-button" %>
+   <%= link_to "Edit", edit_board_path(board.id), class: "card-button" %>
   </div>
   <div class="ui red button">
-   <%= link_to "Delete", board_path(board), method: :delete,  class: "card-button" %>
+   <%= link_to "Delete", board_path(board.id), method: :delete,  class: "card-button" %>
       </div>
   </div>
 </div>
