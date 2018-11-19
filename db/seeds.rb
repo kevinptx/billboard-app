@@ -7,9 +7,16 @@ Song.destroy_all
 end
 
 Board.all.each do
+  board_id = rand(10)
+  artist_id = rand(10)
+
+  #song needs board id and artist id
   Artist.create(name: Faker::Music.band)
-  Song.create(name: Faker::Music.album)
+  Song.create(name: Faker::Music.album, board_id: board_id, artist_id: artist_id)
 end
+
+
+
 
 print `clear`
 puts "10 Genres Created"

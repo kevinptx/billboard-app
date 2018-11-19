@@ -5,6 +5,8 @@
 <p class="header">
   <%= @board.name %>
 </p>
+<%= link_to "Add Song", new_board_song_path %>
+
 <%= link_to "Show Songs", board_songs_path(@board, @songs) %>
 <div class="extra content">
   <%= link_to 'Edit', edit_board_path(@board) %>
