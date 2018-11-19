@@ -1,6 +1,6 @@
 <%= form_with model: @song do |f| %>
   <%= f.text_field :name, placeholder: 'name' %>
-  <%= f.select :artist_id, Artist.all.map { |artist| [ artist.name, artist.id ] } %>
+  <%= f.select :artist_id, @artists.map { |artist| [ artist.name, artist.id ] } %>
   <%= f.select :board_id, @boards.map { |board| [ board.name, board.id ] } %>
-  <%= f.submit %>
+  <%= f.submit nil, class: "btn"%>
 <% end %>

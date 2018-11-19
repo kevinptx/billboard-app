@@ -5,7 +5,7 @@
 <p class="header">
   <%= @board.name %>
 </p>
-</div>
+<%= link_to "Show Songs", board_songs_path(@board, @songs) %>
 <div class="extra content">
   <%= link_to 'Edit', edit_board_path(@board) %>
   <%= link_to 'View Billboards', boards_path %>
