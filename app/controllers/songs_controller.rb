@@ -1,5 +1,5 @@
 class SongsController < ApplicationController
-  before_action :set_song
+  before_action :set_song, except: [:index, :new, :create]
   before_action :set_board, except: [:index, :new, :create]
 
   def index
